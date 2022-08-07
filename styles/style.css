@@ -292,21 +292,21 @@ input:-webkit-autofill {
     background-position: 10px 5px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("images/Calculator.png");
+    background-image: url("./images/Calculator-mobile.png");
 }
 
 .projects .projects-box .cellphone #cellphone2-img{
     background-position: 10px -7px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("images/Sleep_page.png");
+    background-image: url("./images/Sleep-page-mobile.png");
 }
 
 .projects .projects-box .cellphone #cellphone3-img{
     background-position: 15px -15px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("images/Spotify.png");
+    background-image: url("./images/Spotify-mobile.png");
 }
 
 .projects .projects-box .cellphone:hover{
