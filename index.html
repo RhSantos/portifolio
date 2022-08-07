@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Portifólio</title>
+</head>
+
+<body id="body" onscroll="hideButton()">
+    <button class="floating-button" id="fab" onclick="smoothScroll(document.getElementById('body'))"><img src="images/Top-arrow.png" alt=""></button>
+    <header>
+        <div class="menu">
+            <h1>
+                Rhuan Santos
+            </h1>
+            <ul>
+                <li>
+                    <a onclick="smoothScroll(document.getElementById('about-me'))">Sobre Mim </a>
+                </li>
+                <li>
+                    <a onclick="smoothScroll(document.getElementById('projects'))">Projetos</a>
+                </li>
+                <li>
+                    <a onclick="smoothScroll(document.getElementById('contact-me'))">Entre em Contato</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="info">
+        <div class="information">
+            Olá, meu nome é Rhuan Santos
+            <span class="profession"><img src="images/Android Logo.png" alt=""> Android Developer</span>
+            <div class="buttons">
+                <div class="cv-box">
+                    <a>Baixar CV</a>
+                </div>
+                <div class="more-box">
+                    <a>Ver mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="image"><img src="images/photo.jfif" alt=""></div>
+    </div>
+    <div class="about" id="about-me">
+        <h1>Sobre mim</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+        </p>
+
+        <div class="basic-information">
+            <div class="box">
+                <img src="images/id.png" alt="" width="62px" height="62px">
+                <span class="title">Nome Completo</span>
+                <span class="content">Rhuan Santos de Araujo</span>
+            </div>
+            <div class="box">
+                <img src="images/email.png" alt="" width="62px" height="62px">
+                <span class="title">Endereço de Email</span>
+                <span class="content">rhuan.santos.araujo@gmail.com</span>
+            </div>
+            <div class="box">
+                <a href="https://www.linkedin.com/in/rhuan-santos-56ba8819a/" target="_blank" rel="noreferrer noopener">
+                    <img src="images/linkedin.png" alt="" width="52px" height="52px">
+                </a>
+                <span class="title">Linkedin</span>
+                <span class="content">
+                    <a href="https://www.linkedin.com/in/rhuan-santos-56ba8819a/" target="_blank"
+                        rel="noreferrer noopener">
+                        rhuan-santos-araujo
+                    </a>
+                </span>
+            </div>
+            <div class="box" style="margin-right: 0;">
+                <a href="https://github.com/RhSantos" target="_blank" rel="noreferrer noopener">
+                    <img src="images/github.png" alt="" width="62px" height="62px">
+                </a>
+                <span class="title">Github</span>
+                <span class="content">
+                    <a href="https://github.com/RhSantos" target="_blank" rel="noreferrer noopener">RhSantos
+                    </a></span>
+            </div>
+        </div>
+    </div>
+    <div class="projects" id="projects">
+        <h1>Projetos</h1>
+        <div class="projects-box">
+            <div class="cellphone" id="cellphone1" onmouseover="scaleImageUp(this.id)"
+                onmouseleave="scaleImageDown(this.id)" onclick="onClickCellphone(this.id)">
+                <span>Dark Calculator</span>
+                <img id="cellphone1-img" src="images/phone-mockup.png" alt="">
+            </div>
+            <div class="cellphone" id="cellphone2" onmouseover="scaleImageUp(this.id)"
+                onmouseleave="scaleImageDown(this.id)" onclick="onClickCellphone(this.id)">
+                <span>Better Sleep</span>
+                <img id="cellphone2-img" src="images/phone-mockup.png" alt="">
+            </div>
+            <div class="cellphone" id="cellphone3" onmouseover="scaleImageUp(this.id)"
+                onmouseleave="scaleImageDown(this.id)" onclick="onClickCellphone(this.id)" style="margin-right: 0;">
+                <span>Spotify Clone</span>
+                <img id="cellphone3-img" src="images/phone-mockup.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact-me">
+        <h1>Entre em Contato</h1>
+        <form class="form">
+            <input type="text" id="name" placeholder="Nome">
+            <input type="text" id="surname" placeholder="Sobrenome">
+            <input type="email" id="email" placeholder="Email">
+            <input type="tel" id="phone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="Número para Contato">
+            <textarea type="text" id="message" placeholder="Mensagem"></textarea>
+        </form>
+        <div class="submit">
+            <a>Enviar</a>
+        </div>
+    </div>
+    <footer>
+        © Rhuan Santos 2022
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

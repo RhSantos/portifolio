@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=DM Sans');
+*{
+    scrollbar-width: auto;
+    scrollbar-color: #32de84 #171717;
+    background-color: #171717;
+    font-family: 'DM Sans';
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+img {
+    pointer-events: none;
+}
+
+*::-webkit-scrollbar {
+width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+background: #171717;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: #32de84;
+border-radius: 10px;
+border: 0px solid #ffffff;
+}
+
+input:-webkit-autofill { 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+}
+
+.floating-button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #32DE84;
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.floating-button img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+.menu {
+    display: flex;
+    color: white;
+    width: 100%;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    font-weight: normal;
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.menu ul li {
+    padding-bottom: 7px;
+    margin-right: 40px;
+}
+
+.menu ul li:hover {
+    background-color: #32DE84;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+.menu h1 {
+    font-weight: bold;
+    font-size: 36px;
+    margin-left: 80px;
+}
+
+.info {
+    display: flex;
+    margin-top: 40px;
+}
+
+.info .information {
+    margin-left: 128px;
+    width: 458px;
+    font-size: 48px;
+    font-weight: bold;
+    justify-content: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.info .information .profession {
+    margin-top: 8px;
+    color: #828282;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.info .information .profession img{
+    margin-right: 10px;
+}
+
+.info .information .buttons {
+    margin-top: 18px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    width: max-content;
+    display: flex;
+    background-color: #F2F2F2;
+}
+
+.info .information .buttons .cv-box{
+    background-color: #32DE84;
+    width: 150px;
+    display: flex;
+}
+
+.info .information .buttons .cv-box:hover{
+    background-color: white;
+    color: #32DE84;
+}
+
+.info .information .buttons .cv-box a{
+    width: 150px;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.info .information .buttons .more-box{
+    background-color: #f2f2f2;
+    width: 150px;
+    display: flex;
+    padding: 1px;
+}
+
+.info .information .buttons .more-box:hover{
+    color: #32DE84;
+}
+
+.info .information .buttons .more-box a{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.info .image{
+    margin-left: 200px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 2px solid #202020;
+}
+.info .image img{
+    margin: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0 0;
+    transform: translateY(-1px);
+    border: 20px solid #1E1D1D;
+    width: 93.5%;
+    height: 93.5%;
+}
+
+.about {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    width: 745px;
+    margin-top: 80px;
+}
+
+.about h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 38px;
+}
+
+.about .basic-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about .basic-information .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 90px;
+}
+
+.about .basic-information .box img{
+    margin-bottom: 18px;
+}
+
+.about .basic-information .box .title{
+    width: max-content;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.about .basic-information .box .content{
+    width: max-content;
+    font-size: 18px;
+    font-weight: normal;
+    -webkit-touch-callout: all;
+    -webkit-user-select: all; 
+    -khtml-user-select: all; 
+    -moz-user-select: all; 
+    -ms-user-select: all; 
+    user-select: all; 
+}
+
+.about .basic-information .box .content a{
+    text-decoration: none;
+    color: white;
+    -webkit-user-drag: none;
+}
+
+.about .basic-information .box .content a img{
+    pointer-events: none;
+    -webkit-user-drag: none;
+}
+
+.projects {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 1119px;
+}
+
+.projects h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 128px;
+}
+
+.projects .projects-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.projects .projects-box .cellphone{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+    font-size: 26px;
+    font-weight: bold;
+    margin-right: 60px;
+}
+
+.projects .projects-box .cellphone img{
+    margin-top: 24px;
+}
+
+.projects .projects-box .cellphone #cellphone1-img{
+    background-position: 10px 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("images/Calculator.png");
+}
+
+.projects .projects-box .cellphone #cellphone2-img{
+    background-position: 10px -7px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("images/Sleep_page.png");
+}
+
+.projects .projects-box .cellphone #cellphone3-img{
+    background-position: 15px -15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("images/Spotify.png");
+}
+
+.projects .projects-box .cellphone:hover{
+    color: #32DE84;
+    font-size: 30px;
+}
+
+.contact {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 753px;
+}
+
+.contact h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 128px;
+    margin-bottom: 72px;
+}
+
+.form {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 358px 358px;
+    grid-template-rows: 38px 38px 109px;
+    row-gap: 37px;
+    column-gap: 37px;
+    width: 750px;
+}
+
+.form input, .form textarea {
+    border: 0;
+    border-bottom: 2px solid #4F4F4F;
+    background-color: transparent;
+    color: white;
+    resize: none;
+}
+
+.form input::placeholder,.form textarea::placeholder {
+    font-weight: bold;
+    font-size: 14px;
+    color: #4F4F4F;
+}
+
+.form input:focus,.form textarea:focus{
+    border-color: #32DE84;
+    outline: none;
+}
+
+.form #message {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    border: 2px solid #4F4F4F;
+}
+
+.form #message:focus {
+    border-color: #32DE84;
+}
+
+.contact .submit {
+    margin-top: 29px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    width: 150px;
+    background-color: #32DE84;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: max-content;
+}
+
+.contact .submit:hover {
+
+    background-color: white;
+    color: #32DE84;
+}
+
+.contact .submit a {
+    width: 150px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+footer{
+    font-weight: 500;
+    font-size: 14px;
+    color: #4F4F4F;
+    margin-top: 160px;
+    margin-bottom: 93px;
+    text-align: center;
+}
+
