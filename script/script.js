@@ -29,10 +29,10 @@ function scaleImageDown(id){
 
 function onClickCellphone(id){
     if(id == "cellphone1"){
-        window.open("https://github.com/RhSantos")
+        window.open("https://github.com/RhSantos/dark_calculator")
     }
     else if (id == "cellphone2"){
-        window.open("https://github.com/RhSantos")
+        window.open("https://github.com/RhSantos/better_sleep")
     }
     else {
         window.open("https://github.com/RhSantos/spotify_clone")
