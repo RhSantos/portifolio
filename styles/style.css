@@ -10,6 +10,7 @@
     -moz-user-select: none; 
     -ms-user-select: none; 
     user-select: none;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -149,8 +150,15 @@ input:-webkit-autofill {
     height: 100%;
     text-align: center;
     line-height: 50px;
+    text-decoration: none;
+    color: white;
     background-color: transparent;
     cursor: pointer;
+}
+
+.info .information .buttons .cv-box a:hover{
+    background-color: white;
+    color: #32DE84;
 }
 
 .info .information .buttons .more-box{
@@ -258,7 +266,7 @@ input:-webkit-autofill {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 1119px;
+    width: 1200px;
 }
 
 .projects h1 {
@@ -270,9 +278,19 @@ input:-webkit-autofill {
 
 .projects .projects-box {
     display: flex;
+    gap: 30px;
     justify-content: center;
     margin-top: 60px;
 }
+
+.projects-phone-carrossel {
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+}
+
+
 
 .projects .projects-box .cellphone{
     display: flex;
@@ -281,7 +299,6 @@ input:-webkit-autofill {
     cursor: pointer;
     font-size: 26px;
     font-weight: bold;
-    margin-right: 60px;
 }
 
 .projects .projects-box .cellphone img{
@@ -307,6 +324,21 @@ input:-webkit-autofill {
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("../images/Spotify-mobile.png");
+}
+
+.projects .projects-box .cellphone #cellphone4-img{
+    background-position: 20px 18px;
+    background-size: 90% 94%;
+    background-repeat: no-repeat;
+    background-image: url("../images/SimpleWeatherApp.png");
+}
+
+.projects .projects-box .cellphone #cellphone5-img{
+    background-position: 15px 15px;
+    background-clip: border-box;
+    background-size: 90% 95%;
+    background-repeat: no-repeat;
+    background-image: url("../images/ViaCep.png");
 }
 
 .projects .projects-box .cellphone:hover{
@@ -407,5 +439,31 @@ footer{
     margin-top: 160px;
     margin-bottom: 93px;
     text-align: center;
+}
+
+.page-button-previous,.page-button-next{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #32DE84;
+    border: 0;
+    margin: auto 0; 
+    cursor: pointer;
+}
+
+.page-button-previous img{
+    width: 30px;
+    object-fit: contain;
+    height: 30px;
+    margin-right: 5px;
+    background-color: transparent;
+}
+
+.page-button-next img{
+    width: 30px;
+    object-fit: contain;
+    height: 30px;
+    margin-left: 5px;
+    background-color: transparent;
 }
 

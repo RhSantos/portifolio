@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <title>Portifólio</title>
 </head>
 
 <body id="body" onscroll="hideButton()">
-    <button class="floating-button" id="fab" onclick="smoothScroll(document.getElementById('body'))"><img src="images/Top-arrow-icon.png" alt=""></button>
+    <button class="floating-button" id="fab" style="display: none;" onclick="window.scrollTo(0,0)"><img src="images/Top-arrow-icon.png" alt=""></button>
     <header>
         <div class="menu">
             <h1>
@@ -18,13 +19,13 @@
             </h1>
             <ul>
                 <li>
-                    <a onclick="smoothScroll(document.getElementById('about-me'))">Sobre Mim </a>
+                    <a onclick="window.scrollTo(0,document.getElementById('about-me').offsetTop - 60)">Sobre Mim </a>
                 </li>
                 <li>
-                    <a onclick="smoothScroll(document.getElementById('projects'))">Projetos</a>
+                    <a onclick="window.scrollTo(0,document.getElementById('projects').offsetTop - 15)">Projetos</a>
                 </li>
                 <li>
-                    <a onclick="smoothScroll(document.getElementById('contact-me'))">Entre em Contato</a>
+                    <a onclick="window.scrollTo(0,document.getElementById('contact-me').offsetTop)">Entre em Contato</a>
                 </li>
             </ul>
         </div>
@@ -36,7 +37,7 @@
             <span class="profession"><img src="images/Android Logo.png" alt=""> Android Developer</span>
             <div class="buttons">
                 <div class="cv-box">
-                    <a>Baixar CV</a>
+                    <a href="files/Curriculo.pdf" target=”_blank”>Baixar CV</a>
                 </div>
                 <div class="more-box">
                     <a>Ver mais</a>
@@ -93,21 +94,35 @@
     <div class="projects" id="projects">
         <h1>Projetos</h1>
         <div class="projects-box">
-            <div class="cellphone" id="cellphone1" onmouseover="scaleImageUp(this.id)"
-                onmouseleave="scaleImageDown(this.id)" onclick="onClickCellphone(this.id)">
-                <span>Dark Calculator</span>
-                <img id="cellphone1-img" src="images/phone-mockup.png" alt="">
-            </div>
-            <div class="cellphone" id="cellphone2" onmouseover="scaleImageUp(this.id)"
-                onmouseleave="scaleImageDown(this.id)" onclick="onClickCellphone(this.id)">
-                <span>Better Sleep</span>
-                <img id="cellphone2-img" src="images/phone-mockup.png" alt="">
-            </div>
-            <div class="cellphone" id="cellphone3" onmouseover="scaleImageUp(this.id)"
-                onmouseleave="scaleImageDown(this.id)" onclick="onClickCellphone(this.id)" style="margin-right: 0;">
-                <span>Spotify Clone</span>
-                <img id="cellphone3-img" src="images/phone-mockup.png" alt="">
-            </div>
+            <button class="page-button-previous" onclick="scrollCaroussel(this)"><img src="images/left-arrow-icon.png" alt=""></button>
+            <div class="projects-phone-carrossel"> 
+                <div class="cellphone" id="cellphone1" onmouseover="scaleImageUp(this.id)"
+                    onmouseleave="scaleImageDown(this.id)" onclick="onClickCellphone(this.id)">
+                    <span>Dark Calculator</span>
+                    <img id="cellphone1-img" src="images/phone-mockup.png" alt="">
+                </div>
+                <div class="cellphone" id="cellphone2" onmouseover="scaleImageUp(this.id)"
+                    onmouseleave="scaleImageDown(this.id)" onclick="onClickCellphone(this.id)">
+                    <span>Better Sleep</span>
+                    <img id="cellphone2-img" src="images/phone-mockup.png" alt="">
+                </div>
+                <div class="cellphone" id="cellphone3" onmouseover="scaleImageUp(this.id)"
+                    onmouseleave="scaleImageDown(this.id)" onclick="onClickCellphone(this.id)" style="margin-right: 0;">
+                    <span>Spotify Clone</span>
+                    <img id="cellphone3-img" src="images/phone-mockup.png" alt="">
+                </div>
+                <div class="cellphone" id="cellphone4" onmouseover="scaleImageUp(this.id)"
+                    onmouseleave="scaleImageDown(this.id)" onclick="onClickCellphone(this.id)" style="margin-right: 0;">
+                    <span>Simple Weather App</span>
+                    <img id="cellphone4-img" src="images/phone-mockup.png" alt="">
+                </div>
+                <div class="cellphone" id="cellphone5" onmouseover="scaleImageUp(this.id)"
+                    onmouseleave="scaleImageDown(this.id)" onclick="onClickCellphone(this.id)" style="margin-right: 0;">
+                    <span>Via Cep</span>
+                    <img id="cellphone5-img" src="images/phone-mockup.png" alt="">
+                </div>
+            </div> 
+            <button class="page-button-next" onclick="scrollCaroussel(this)"><img src="images/right-arrow-icon.png" alt=""></button>
         </div>
     </div>
     <div class="contact" id="contact-me">
